@@ -9,7 +9,7 @@
         <b-nav-item to="/" class="menu-button">ТЕАТРАЛЬНЫЕ МУЗЕИ И АРХИВЫ</b-nav-item>
         <b-nav-item to="/" class="menu-button">ТЕАТРЫ</b-nav-item>
         <b-nav-item to="/" class="menu-button">ИМЕННОЙ УКАЗАТЕЛЬ</b-nav-item>
-        <b-nav-item to="/" class="menu-button">ГЕОРАФИЧЕСКИЙ УКАЗАТЕЛЬ</b-nav-item>
+        <b-nav-item to="/" class="menu-button">ГЕОГРАФИЧЕСКИЙ УКАЗАТЕЛЬ</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
