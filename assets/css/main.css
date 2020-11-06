@@ -13,7 +13,6 @@ body {
 }
 a {
     color: #270000 !important;
-    text-decoration: none;
 }
 
 a:hover {
@@ -50,4 +49,11 @@ a:hover {
 .menu-button:hover {
     background-color: #d3c2a2;
 
+}
+.container, .row {
+    padding: 0;
+    margin: auto;
+}
+.main-content {
+    margin-bottom: 30px;
 }

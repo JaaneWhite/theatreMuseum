@@ -1,7 +1,9 @@
 <template>
   <header>
   <b-row class="header-carousel">
-    <b-col class="header-left"></b-col>
+    <b-col class="header-left">
+
+    </b-col>
     <b-col class="header-right">
       <b-carousel
           id="carousel-1"
@@ -21,9 +23,11 @@
       </b-carousel>
     </b-col>
   </b-row>
-  <b-container class="menu-row">
-    <TopMenu/>
-  </b-container>
+  <b-row class="menu-row">
+    <b-container class="menu-row">
+      <TopMenu/>
+    </b-container>
+  </b-row>
   </header>
 </template>
 

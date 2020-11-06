@@ -4,7 +4,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav fill>
         <b-nav-item to="/" class="menu-button">
-          <b-img src="../assets/img/home.png" class="home-logo" alt="Home"></b-img>
+          <b-img src="~assets/img/home.png" class="home-logo" alt="Home"></b-img>
         </b-nav-item>
         <b-nav-item to="/" class="menu-button">ТЕАТРАЛЬНЫЕ МУЗЕИ И АРХИВЫ</b-nav-item>
         <b-nav-item to="/" class="menu-button">ТЕАТРЫ</b-nav-item>
