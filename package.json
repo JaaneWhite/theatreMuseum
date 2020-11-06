@@ -1,0 +1,18 @@
+{
+  "name": "theatreMuseum",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.18.1",
+    "nuxt": "^2.14.7",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.7"
+  }
+}
