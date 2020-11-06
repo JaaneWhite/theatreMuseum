@@ -1,4 +1,5 @@
 <template>
+  <header>
   <b-row class="header-carousel">
     <b-col class="header-left"></b-col>
     <b-col class="header-right">
@@ -19,14 +20,19 @@
 
       </b-carousel>
     </b-col>
-
-
   </b-row>
+  <b-container class="menu-row">
+    <TopMenu/>
+  </b-container>
+  </header>
 </template>
 
 <script>
+import TopMenu from "@/components/TopMenu";
+
 export default {
-  name: "HomeHeaderComponent"
+  name: "HomeHeaderComponent",
+  components: {TopMenu}
 }
 </script>
 
@@ -43,5 +49,6 @@ export default {
   height: 475px;
   width: 980px;
 }
+
 
 </style>
