@@ -58,3 +58,31 @@ a:hover {
 .main-content {
     margin-bottom: 30px;
 }
+.breadcrumb {
+    background-color: transparent;
+    color: #cac3b1;
+    padding-left: 0;
+}
+.breadcrumb-item a, .breadcrumb-item.active {
+    color: #cac3b1 !important;
+}
+.breadcrumb-item a {
+    text-decoration: underline;
+}
+.page-title {
+    font-size: 2vw;
+}
+.page-item.disabled .page-link, .page-link, .page-item:hover .page-link {
+    color: #270000;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 16px;
+    font-family: Roboto;
+}
+.page-item.active .page-link {
+    color: #270000;
+    background-color: #f1eae0;
+    border: none;
+    font-size: 16px;
+    font-family: Roboto;
+}
