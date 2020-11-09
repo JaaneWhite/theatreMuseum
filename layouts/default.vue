@@ -11,7 +11,7 @@
 import HeaderComponent from "@/components/headerComponent";
 import FooterComponent from "@/components/footerComponent";
 export default {
-  name: "default.vue",
+  name: "default",
   components: {FooterComponent, HeaderComponent}
 }
 </script>

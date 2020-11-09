@@ -55,7 +55,7 @@
       </b-col>
       <b-col>
         <b-card class="section-card">
-          <b-link to="" class="card-link">
+          <b-link to="collections" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/6.png" class="card-img"></b-card-img>
             </div>

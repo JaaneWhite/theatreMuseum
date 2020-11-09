@@ -139,6 +139,9 @@ export default {
   background-color: white;
 
 }
+.search-form:active, .search-form:focus, .search-form:hover {
+  opacity: 100%;
+}
 .search-button {
   background-color: transparent;
   border: none;
