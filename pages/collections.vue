@@ -187,6 +187,9 @@ export default {
 .c-menu-button a {
   padding-left: 0;
 }
+.c-menu-button:hover a {
+  color: #d78d5e !important;
+}
 .collection-title {
   font-size: 1.4vw;
   font-weight: bold;

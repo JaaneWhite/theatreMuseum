@@ -85,3 +85,11 @@ a:hover {
     border: none;
     font-size: 16px;
 }
+.nav-tabs .nav-link {
+    background-color: #dfd0b3 !important;
+    border: none;
+    border-radius: 0;
+}
+.nav-tabs .nav-link.active {
+    background-color: #d3c2a2 !important;
+}
