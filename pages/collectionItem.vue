@@ -10,6 +10,41 @@
         <b-img src="~assets/img/posters/1-big.png"></b-img>
       </b-col>
       <b-col cols="6" class="info-col">
+        <b-row class="item-title">
+          <b-link to="">
+          Государственный центральный театральный музей имени А.А. Бахрушина
+          </b-link>
+        </b-row>
+        <b-row class="item-info" style="flex-direction: column">
+          <p class="info-title">Описание экспоната:</p>
+          <p class="info-text">Наименование: Афиша художественная с исполнителями</p>
+          <p class="info-text">Спектакль: "Продавцы славы". Режиссеры - А.А. Гейрот, Б.М. Дмоховский. Художник - Н.П. Акимов. Музыка - Н.М. Стрельников</p>
+        </b-row>
+        <b-row class="item-info">
+          <p class="info-title">Тип экспоната: &nbsp;</p>
+          <p class="info-link"><b-link to="">Афиша</b-link></p>
+        </b-row>
+        <b-row class="item-info">
+          <p class="info-title">Год создания: &nbsp;</p>
+          <p class="info-text">1992</p>
+        </b-row>
+        <b-row class="item-info">
+          <p class="info-title">Материал, техника: &nbsp;</p>
+          <p class="info-text">Бумага, печать</p>
+        </b-row>
+        <b-row class="item-info">
+          <p class="info-title">Место создания: &nbsp;</p>
+          <p class="info-text">Москва</p>
+        </b-row>
+        <b-row class="item-info">
+          <p class="info-title">Номер по ГИК (КП): &nbsp;</p>
+          <p class="info-text">КП 325105/55.АфС 37874</p>
+        </b-row>
+        <b-row class="item-info">
+          <p class="info-title">Тематические группировки: &nbsp;</p>
+          <p class="info-link"><b-link to="">Выставка "Предметы из фонда и программ ГЦТМ им. А.А. Бахрушина"</b-link></p>
+        </b-row>
+
 
       </b-col>
     </b-row>
@@ -45,5 +80,28 @@ export default {
 <style scoped>
 .image-col {
   padding-left: 0;
+}
+.item-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.item-title a, .info-link a{
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+.info-link {
+  margin-bottom: 0;
+}
+.info-title {
+  color: #9f959d;
+  margin-bottom: 0;
+}
+.item-info {
+  display: flex;
+  margin-top: 20px;
+}
+.info-text{
+  margin-bottom: 0;
 }
 </style>
