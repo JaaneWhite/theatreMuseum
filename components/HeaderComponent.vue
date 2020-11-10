@@ -3,10 +3,10 @@
   <b-row class="header-row">
     <b-container>
       <b-row>
-        <b-col cols="6">
-          <b-row class="title-text">ТЕАТРАЛЬНЫЕ МУЗЕИ И АРХИВЫ РОССИИ И РУССКОГО ЗАРУБЕЖЬЯ</b-row>
+        <b-col cols="7">
+          <b-row class="title-text">ТЕАТРАЛЬНЫЕ МУЗЕИ И АРХИВЫ РОССИИ <br>И РУССКОГО ЗАРУБЕЖЬЯ</b-row>
         </b-col>
-        <b-col cols="2"></b-col>
+        <b-col cols="1"></b-col>
         <b-col cols="4" class="search-block">
           <b-row class="search-row">
           <b-form class="search-form">
@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .header-row {
-  background-image: url("~assets/img/header bg.png");
+  background-image: url("~assets/img/header-bg2.png");
 }
 .title-text {
   margin-top: 3vw;
