@@ -37,7 +37,7 @@
               <b-card-img src="~assets/img/posters/1.png" top class="poster-card-image">
               </b-card-img>
               </div>
-              <b-card-text class="poster-card-text first-card"><b-link to="">Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса Турандот". 27 февраля 1922 г.</b-link></b-card-text>
+              <b-card-text class="poster-card-text first-card"><b-link to="collectionItem">Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса Турандот". 27 февраля 1922 г.</b-link></b-card-text>
             </b-card>
           </b-col>
           <b-col cols="4" class="poster-col">
