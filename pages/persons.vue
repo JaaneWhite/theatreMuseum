@@ -6,27 +6,7 @@
     <b-row class="page-title">Персоны</b-row>
     <b-row>
       <b-col cols="3" class="menu-col">
-        <b-row class="pagination-row">
-          <pagination />
-        </b-row>
-        <b-nav vertical class="persons-menu">
-          <b-nav-item class="c-menu-button">Абади Мартин</b-nav-item>
-          <b-nav-item class="c-menu-button">Абадиев Бек</b-nav-item>
-          <b-nav-item class="c-menu-button">Абакаров Ахмедхан</b-nav-item>
-          <b-nav-item class="c-menu-button">Абасов Магомед Абасович (Абасил)</b-nav-item>
-          <b-nav-item class="c-menu-button">Абашев Петр Тимофеевич</b-nav-item>
-          <b-nav-item class="c-menu-button">Абашова Мария Юрьевна</b-nav-item>
-          <b-nav-item class="c-menu-button">Аббасов Азат Зиннатович</b-nav-item>
-          <b-nav-item class="c-menu-button">Абдиев Султан Назирович</b-nav-item>
-          <b-nav-item class="c-menu-button">Абдоков Маталио Умарович</b-nav-item>
-          <b-nav-item class="c-menu-button">Абдулов Гавриил Данилович</b-nav-item>
-          <b-nav-item class="c-menu-button">Абдулов Александр</b-nav-item>
-          <b-nav-item class="c-menu-button">Абдулхак Хамид Тархан</b-nav-item>
-          <b-nav-item class="c-menu-button">Абдураззаков Барзу</b-nav-item>
-        </b-nav>
-        <b-row class="pagination-row">
-          <pagination />
-        </b-row>
+        <listMenu/>
       </b-col>
       <b-col cols="9">
         <b-row class="person-title">Брехт Бертольт</b-row>
@@ -38,11 +18,11 @@
         <b-row style="flex-direction: column">
           <b-row class="person-info">
             <p class="info-title">Роды занятий: &nbsp;</p>
-            <p class="info-link"><b-link>Драматург</b-link>, <b-link>поэт</b-link></p>
+            <p><b-link class="info-link">Драматург</b-link>, <b-link class="info-link">поэт</b-link></p>
           </b-row>
           <b-row class="person-info">
             <p class="info-title">Постоянная ссылка на данное описание: &nbsp;</p>
-            <p class="info-link"><b-link></b-link></p>
+            <p class="info-link"><b-link class="info-link">http://theatre-museum.ru/object/2472680</b-link></p>
           </b-row>
         </b-row>
         <b-tabs
@@ -195,8 +175,10 @@
 </template>
 
 <script>
+import ListMenu from "@/pages/ListMenu";
 export default {
   name: "persons",
+  components: {ListMenu},
   data() {
     return {
       items: [
@@ -218,12 +200,6 @@ export default {
 .menu-col {
   border-right: solid #270000 1px;
   padding: 0;
-}
-.c-menu-button a {
-  padding-left: 0;
-}
-.c-menu-button:hover a {
-  color: #d78d5e !important;
 }
 .menu-col .pagination-row {
   text-align: left;
@@ -251,7 +227,7 @@ export default {
 .info-link {
   margin-bottom: 0;
 }
-.info-link a{
+.info-link {
   font-weight: bold;
   text-decoration: underline;
 
@@ -259,7 +235,7 @@ export default {
 .person-text {
   margin-bottom: 20px;
 }
-.person-info {
+.person-info, .person-info p {
   text-align: left;
   margin: 0;
 }
@@ -319,7 +295,7 @@ export default {
 .last-card {
   margin-right: 0;
 }
-.c-menu-button:hover a {
+.info-link:hover{
   color: #d78d5e !important;
 }
 

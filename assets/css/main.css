@@ -78,12 +78,14 @@ a:hover {
     background-color: transparent;
     border-color: transparent;
     font-size: 16px;
+    box-shadow: none;
 }
 .page-item.active .page-link {
     color: #270000;
     background-color: #f1eae0;
     border: none;
     font-size: 16px;
+    box-shadow: none;
 }
 .nav-tabs .nav-link {
     background-color: #dfd0b3 !important;
