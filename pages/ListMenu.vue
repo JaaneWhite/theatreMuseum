@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <b-row class="pagination-row">
       <b-pagination
           v-model="currentPage"
           pills
@@ -11,6 +11,7 @@
           :per-page="perPage"
           :aria-controls="paginationAreaControls"
       ></b-pagination>
+    </b-row>
 
     <b-list-group class="persons-menu" id="listMenunav">
       <b-list-group-item
@@ -24,7 +25,16 @@
       </b-list-group-item>
     </b-list-group>
     <b-row class="pagination-row">
-      <pagination />
+      <b-pagination
+          v-model="currentPage"
+          pills
+          first-number
+          last-number
+          class="pagination"
+          :total-rows="rows"
+          :per-page="perPage"
+          :aria-controls="paginationAreaControls"
+      ></b-pagination>
     </b-row>
   </div>
 </template>

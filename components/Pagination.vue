@@ -5,6 +5,10 @@
         first-number
         last-number
         class="pagination"
+        next-text=""
+        next-class="pagination-next-button"
+        prev-text=""
+        prev-class="pagination-prev-button"
     ></b-pagination>
 </template>
 <script>

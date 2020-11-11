@@ -71,26 +71,58 @@ a:hover {
 }
 .page-title {
     font-size: 2vw;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 1.389;
+}
+
+.pagination {
+    margin: 30px auto;
 }
 .page-item.disabled .page-link, .page-link, .page-item:hover .page-link {
     color: #270000;
     background-color: transparent;
     border-color: transparent;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.2;
     box-shadow: none;
 }
 .page-item.active .page-link {
     color: #270000;
     background-color: #f1eae0;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.2;
     box-shadow: none;
+}
+.pagination-next-button {
+    background-image: url("~assets/img/arrow right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pagination-prev-button {
+    background-image: url("~assets/img/arrow left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav-tabs {
+    border: none;
+    display: flex;
+}
+.nav-item {
+    margin: auto;
 }
 .nav-tabs .nav-link {
     background-color: #dfd0b3 !important;
     border: none;
     border-radius: 0;
+    padding: 17px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+
+
 }
 .nav-tabs .nav-link.active {
     background-color: #d3c2a2 !important;

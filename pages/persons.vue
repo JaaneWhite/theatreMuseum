@@ -22,7 +22,7 @@
           </b-row>
           <b-row class="person-info">
             <p class="info-title">Постоянная ссылка на данное описание: &nbsp;</p>
-            <p class="info-link"><b-link class="info-link">http://theatre-museum.ru/object/2472680</b-link></p>
+            <p class="info-link"><b-link class="info-link" to="persontype">http://theatre-museum.ru/object/2472680</b-link></p>
           </b-row>
         </b-row>
         <b-tabs
@@ -224,13 +224,11 @@ export default {
   color: #9f959d;
   margin-bottom: 0;
 }
-.info-link {
-  margin-bottom: 0;
-}
+
 .info-link {
   font-weight: bold;
   text-decoration: underline;
-
+  margin-bottom: 0;
 }
 .person-text {
   margin-bottom: 20px;
