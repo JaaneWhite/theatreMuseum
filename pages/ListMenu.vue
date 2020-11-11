@@ -9,12 +9,11 @@
           class="pagination"
           :total-rows="rows"
           :per-page="perPage"
-          aria-controls="listMenunav"
+          :aria-controls="paginationAreaControls"
       ></b-pagination>
 
-    <b-list-group class="persons-menu">
+    <b-list-group class="persons-menu" id="listMenunav">
       <b-list-group-item
-          id="listMenunav"
           class="c-menu-button"
           v-for="person in personlist"
           :key="person.name"
@@ -36,6 +35,7 @@ export default {
     return {
       currentPage: 1,
       perPage: 3,
+      paginationAreaControls: "listMenunav",
       personlist: [
         {name: 'Абади Мартин', link: 'persons'},
         {name: 'Абадиев Бек', link: 'persons'},
