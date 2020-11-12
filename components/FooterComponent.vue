@@ -41,9 +41,18 @@ export default {
 <style scoped>
 .footer-links {
   margin-top: 30px;
+
 }
 .footer-link a{
   text-decoration: underline;
   font-weight: bold;
+  font-size: 14px;
+  line-height: 1.571;
 }
+.footer-text {
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+
 </style>

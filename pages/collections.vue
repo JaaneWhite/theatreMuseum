@@ -10,6 +10,7 @@
           <b-nav-item to="#afi" exact exact-active-class="active" class="c-menu-button">Афиши</b-nav-item>
           <b-nav-item class="c-menu-button">Декорации</b-nav-item>
           <b-nav-item class="c-menu-button">Документы, рукописи</b-nav-item>
+          <b-nav-item class="c-menu-button">Здания театров и музеев</b-nav-item>
           <b-nav-item class="c-menu-button">Книги</b-nav-item>
           <b-nav-item class="c-menu-button">Костюмы, грим</b-nav-item>
           <b-nav-item class="c-menu-button">Куклы</b-nav-item>
@@ -22,7 +23,7 @@
           <b-nav-item class="c-menu-button">Сцены из спектаклей</b-nav-item>
         </b-nav>
       </b-col>
-      <b-col cols="9">
+      <b-col cols="9" class="collection-col">
         <b-row>
           <b-col cols="6" class="collection-title">Афиши</b-col>
           <b-col cols="6" class="collection-num">Показано экспонатов: 1-12 из 774</b-col>
@@ -184,22 +185,42 @@ export default {
   border-right: solid #270000 1px;
   padding: 0;
 }
+.c-menu-button {
+  margin: 0;
+  padding-bottom: 6px;
+}
+
 .c-menu-button a {
   padding-left: 0;
 }
 .c-menu-button:hover a {
   color: #d78d5e !important;
 }
+.collection-col {
+  padding-left: 30px;
+}
+
 .collection-title {
   font-size: 1.4vw;
   font-weight: bold;
   padding: 0;
 }
+
 .collection-num {
   text-align: right;
+  font-size: 16px;
+  color: #9f959d;
+  line-height: 2;
 }
+
+
 .pagination-row {
   text-align: center;
+
+}
+.pagination {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 .poster-col {
   padding: 0;
@@ -234,7 +255,7 @@ export default {
 .poster-card-text {
 
   width: 16vw;
-  margin: 30px auto auto;
+  margin: 15px auto auto;
   text-align: left;
 }
 .poster-card-text a{
@@ -254,8 +275,7 @@ export default {
 .last-card {
   margin-right: 0;
 }
-.c-menu-button:hover a {
-  color: #d78d5e !important;
-}
+
+
 
 </style>

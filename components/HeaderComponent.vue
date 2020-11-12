@@ -18,7 +18,7 @@
           </b-row>
           <b-row class="link-row">
             <b-col cols="9" class="left-link"><b-link to="#" class="search-link">Расширенный поиск</b-link></b-col>
-            <b-col cols="3" class="right-link"><b-link to="#" class="search-link">А-Я</b-link></b-col>
+            <b-col cols="3" class="right-link"><b-link to="#" class="search-link">А - Я</b-link></b-col>
           </b-row>
         </b-col>
       </b-row>
@@ -41,11 +41,11 @@ export default {
 
 <style scoped>
 .header-row {
-  background-image: url("~assets/img/header-bg2.png");
+  background-image: url("~assets/img/header bg.png");
 }
 .title-text {
-  margin-top: 3vw;
-  margin-bottom: 3vw;
+  margin-top: 3.5vw;
+  margin-bottom: 3.5vw;
   color: white;
   font-size: 36px;
   line-height: 1.389;
@@ -54,7 +54,7 @@ export default {
   display: flex;
   text-align: right;
   flex-direction: column;
-  margin-top: 3vw;
+  margin-top: 4vw;
 }
 .search-row {
   margin: 0;
@@ -67,7 +67,7 @@ export default {
   width: 100%;
   border-radius: 25px;
   opacity: 75%;
-  height: 2vw;
+  height: 2.3vw;
   padding: 0 20px 0 10px;
   background-color: white;
 

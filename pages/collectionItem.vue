@@ -22,7 +22,7 @@
         </b-row>
         <b-row class="item-info">
           <p class="info-title">Тип экспоната: &nbsp;</p>
-          <p class="info-link"><b-link to="">Афиша</b-link></p>
+          <p class="info-link"><b-link to="">афиша</b-link></p>
         </b-row>
         <b-row class="item-info">
           <p class="info-title">Год создания: &nbsp;</p>
@@ -82,13 +82,21 @@ export default {
   padding-left: 0;
 }
 .item-title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 20px;
+  padding: 0;
 }
+.item-info {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
 .item-title a, .info-link a{
   font-weight: bold;
   text-decoration: underline;
-
+  padding: 0;
 }
 .info-link {
   margin-bottom: 0;
@@ -97,10 +105,7 @@ export default {
   color: #9f959d;
   margin-bottom: 0;
 }
-.item-info {
-  display: flex;
-  margin-top: 20px;
-}
+
 .info-text{
   margin-bottom: 0;
 }
