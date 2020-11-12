@@ -6,11 +6,16 @@
     <b-row class="page-title">Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса
       Турандот". 27 февраля 1922 г.</b-row>
     <b-row>
-      <b-col cols="6" class="image-col">
-        <b-img src="~assets/img/posters/1-big.png"></b-img>
+      <b-col cols="9" xl="6" class="image-col">
+        <b-img src="~assets/img/posters/1-big.png" class="item-image"></b-img>
       </b-col>
-      <b-col cols="6" class="info-col">
-        <b-row class="item-title">
+      <b-col cols="3" xl="0" class="museum-title sm-scr">
+          <b-link to="">
+            Государственный центральный театральный музей имени А.А. Бахрушина
+          </b-link>
+      </b-col>
+      <b-col cols="12" xl="6" class="info-col">
+        <b-row class="museum-title bg-scr">
           <b-link to="">
           Государственный центральный театральный музей имени А.А. Бахрушина
           </b-link>
@@ -81,7 +86,10 @@ export default {
 .image-col {
   padding-left: 0;
 }
-.item-title {
+.item-image {
+  max-width: 100%;
+}
+.museum-title {
   margin-bottom: 30px;
   font-size: 20px;
   padding: 0;
@@ -93,7 +101,7 @@ export default {
   font-size: 16px;
 }
 
-.item-title a, .info-link a{
+.museum-title a, .info-link a{
   font-weight: bold;
   text-decoration: underline;
   padding: 0;
@@ -108,5 +116,20 @@ export default {
 
 .info-text{
   margin-bottom: 0;
+}
+.sm-scr {
+  display: none;
+}
+@media (max-width: 1025px) {
+  .bg-scr {
+    display: none;
+  }
+  .sm-scr {
+    display: flex;
+    align-items: center;
+  }
+  .item-image {
+    padding-right: 20px;
+  }
 }
 </style>

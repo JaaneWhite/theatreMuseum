@@ -3,11 +3,11 @@
   <b-row class="header-row">
     <b-container>
       <b-row>
-        <b-col cols="7">
+        <b-col cols="12" xl="7">
           <b-row class="title-text">ТЕАТРАЛЬНЫЕ МУЗЕИ И АРХИВЫ РОССИИ <br>И РУССКОГО ЗАРУБЕЖЬЯ</b-row>
         </b-col>
-        <b-col cols="1"></b-col>
-        <b-col cols="4" class="search-block">
+        <b-col cols="12" xl="1"></b-col>
+        <b-col cols="12" xl="4" class="search-block">
           <b-row class="search-row">
           <b-form class="search-form">
             <b-form-input id="search-input" placeholder="Поиск" type="search"></b-form-input>
@@ -126,4 +126,29 @@ export default {
   text-align: right;
   padding: 0;
 }
+@media (max-width: 1025px) {
+
+  .title-text {
+    text-align: center;
+    margin-top: 10vw;
+  }
+  .search-block {
+    margin-top: 0;
+    margin-bottom: 4vw;
+  }
+  .search-form {
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 4vw;
+  }
+  .link-row {
+    margin-right: 15%;
+    margin-left: 15%;
+
+  }
+  .keyboard-button, .divider-img {
+    display: none;
+  }
+}
+
 </style>

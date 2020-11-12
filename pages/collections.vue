@@ -25,128 +25,24 @@
       </b-col>
       <b-col cols="9" class="collection-col">
         <b-row>
-          <b-col cols="6" class="collection-title">Афиши</b-col>
-          <b-col cols="6" class="collection-num">Показано экспонатов: 1-12 из 774</b-col>
+          <b-col cols="12" xl="6" class="collection-title">Афиши</b-col>
+          <b-col cols="12" xl="6" class="collection-num">Показано экспонатов: 1-12 из 774</b-col>
         </b-row>
         <b-row class="pagination-row">
           <pagination/>
         </b-row>
         <b-row class="posters-row">
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
+
+            <b-card class="poster-card" v-for="poster in posters">
               <div class="poster-card-img-cont first-card">
-              <b-card-img src="~assets/img/posters/1.png" top class="poster-card-image">
+              <b-card-img :src="poster.image" top class="poster-card-image">
               </b-card-img>
               </div>
-              <b-card-text class="poster-card-text first-card"><b-link to="collectionItem">Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса Турандот". 27 февраля 1922 г.</b-link></b-card-text>
+              <b-card-text class="poster-card-text first-card"><b-link to="collectionItem">{{poster.text}}</b-link></b-card-text>
             </b-card>
-          </b-col>
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont">
-              <b-card-img src="~assets/img/posters/2.png" top class="poster-card-image">
-              </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text"><b-link to="">Акимов Николай Павлович (1901-1968). Афиша художественная с исполнителями. Ленинград, Ленинградский Большой драматический театр. "Продавцы славы" Паньоль М., Нивуа П. 12, 14, 16, 21 января 1926</b-link></b-card-text>
-            </b-card>
-          </b-col>
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont last-card">
-              <b-card-img src="~assets/img/posters/3.png" top class="poster-card-image">
-              </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text last-card"><b-link to="">Акимов Николай Павлович (1901-1968). Афиша художественная. Ленинград, Государственный академический театр драмы. "Радость" Щеглов Д.А. 17 декабря 1931 г.</b-link></b-card-text>
-            </b-card>
-          </b-col>
         </b-row>
-        <b-row class="posters-row">
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont first-card">
-                <b-card-img src="~assets/img/posters/1.png" top class="poster-card-image">
-                </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text first-card"><b-link to="">Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса Турандот". 27 февраля 1922 г.</b-link></b-card-text>
-            </b-card>
-          </b-col>
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont">
-                <b-card-img src="~assets/img/posters/2.png" top class="poster-card-image">
-                </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text"><b-link to="">Акимов Николай Павлович (1901-1968). Афиша художественная с исполнителями. Ленинград, Ленинградский Большой драматический театр. "Продавцы славы" Паньоль М., Нивуа П. 12, 14, 16, 21 января 1926</b-link></b-card-text>
-            </b-card>
-          </b-col>
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont last-card">
-                <b-card-img src="~assets/img/posters/3.png" top class="poster-card-image">
-                </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text last-card"><b-link to="">Акимов Николай Павлович (1901-1968). Афиша художественная. Ленинград, Государственный академический театр драмы. "Радость" Щеглов Д.А. 17 декабря 1931 г.</b-link></b-card-text>
-            </b-card>
-          </b-col>
-        </b-row>
-        <b-row class="posters-row">
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont first-card">
-                <b-card-img src="~assets/img/posters/1.png" top class="poster-card-image">
-                </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text first-card"><b-link to="">Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса Турандот". 27 февраля 1922 г.</b-link></b-card-text>
-            </b-card>
-          </b-col>
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont">
-                <b-card-img src="~assets/img/posters/2.png" top class="poster-card-image">
-                </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text"><b-link to="">Акимов Николай Павлович (1901-1968). Афиша художественная с исполнителями. Ленинград, Ленинградский Большой драматический театр. "Продавцы славы" Паньоль М., Нивуа П. 12, 14, 16, 21 января 1926</b-link></b-card-text>
-            </b-card>
-          </b-col>
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont last-card">
-                <b-card-img src="~assets/img/posters/3.png" top class="poster-card-image">
-                </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text last-card"><b-link to="">Акимов Николай Павлович (1901-1968). Афиша художественная. Ленинград, Государственный академический театр драмы. "Радость" Щеглов Д.А. 17 декабря 1931 г.</b-link></b-card-text>
-            </b-card>
-          </b-col>
-        </b-row>
-        <b-row class="posters-row">
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont first-card">
-                <b-card-img src="~assets/img/posters/1.png" top class="poster-card-image">
-                </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text first-card"><b-link to="">Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса Турандот". 27 февраля 1922 г.</b-link></b-card-text>
-            </b-card>
-          </b-col>
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont">
-                <b-card-img src="~assets/img/posters/2.png" top class="poster-card-image">
-                </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text"><b-link to="">Акимов Николай Павлович (1901-1968). Афиша художественная с исполнителями. Ленинград, Ленинградский Большой драматический театр. "Продавцы славы" Паньоль М., Нивуа П. 12, 14, 16, 21 января 1926</b-link></b-card-text>
-            </b-card>
-          </b-col>
-          <b-col cols="4" class="poster-col">
-            <b-card class="poster-card">
-              <div class="poster-card-img-cont last-card">
-                <b-card-img src="~assets/img/posters/3.png" top class="poster-card-image">
-                </b-card-img>
-              </div>
-              <b-card-text class="poster-card-text last-card"><b-link to="">Акимов Николай Павлович (1901-1968). Афиша художественная. Ленинград, Государственный академический театр драмы. "Радость" Щеглов Д.А. 17 декабря 1931 г.</b-link></b-card-text>
-            </b-card>
-          </b-col>
-        </b-row>
+
+
 
       </b-col>
     </b-row>
@@ -174,6 +70,14 @@ export default {
           text: 'Коллекции',
           active: true
         }
+      ],
+      posters: [
+        {image: '~assets/img/posters/1.png', text: 'Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса Турандот". 27 февраля 1922 г.'},
+        {image: '~assets/img/posters/2.png', text: 'Акимов Николай Павлович (1901-1968). Афиша художественная с исполнителями. Ленинград, Ленинградский Большой драматический театр. "Продавцы славы" Паньоль М., Нивуа П. 12, 14, 16, 21 января 1926'},
+        {image: '~assets/img/posters/3.png', text: 'Акимов Николай Павлович (1901-1968). Афиша художественная. Ленинград, Государственный академический театр драмы. "Радость" Щеглов Д.А. 17 декабря 1931 г.'},
+        {image: '~assets/img/posters/1.png', text: 'Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса Турандот". 27 февраля 1922 г.'},
+        {image: '~assets/img/posters/2.png', text: 'Акимов Николай Павлович (1901-1968). Афиша художественная с исполнителями. Ленинград, Ленинградский Большой драматический театр. "Продавцы славы" Паньоль М., Нивуа П. 12, 14, 16, 21 января 1926'},
+        {image: '~assets/img/posters/3.png', text: 'Акимов Николай Павлович (1901-1968). Афиша художественная. Ленинград, Государственный академический театр драмы. "Радость" Щеглов Д.А. 17 декабря 1931 г.'},
       ]
     }
   }
@@ -222,17 +126,20 @@ export default {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.poster-col {
-  padding: 0;
-}
+
 .posters-row {
   margin-bottom: 30px;
+  margin-left: 15px;
+  padding: 0;
 }
-
 .poster-card {
   border: none;
   border-radius: 0;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
 }
 .poster-card .card-body {
   padding: 0;
@@ -242,6 +149,8 @@ export default {
   background-color: #f5f2ec;
   width: 16vw;
   height: 16vw;
+  min-height: 190px;
+  min-width: 190px;
   padding: 0;
   display: flex;
   margin: auto;
@@ -255,6 +164,9 @@ export default {
 .poster-card-text {
 
   width: 16vw;
+  min-width: 190px;
+  max-height: 180px;
+  overflow: hidden;
   margin: 15px auto auto;
   text-align: left;
 }
@@ -275,7 +187,12 @@ export default {
 .last-card {
   margin-right: 0;
 }
-
+@media (max-width: 1025px) {
+  .collection-num {
+    text-align: left;
+    padding: 0;
+  }
+}
 
 
 </style>

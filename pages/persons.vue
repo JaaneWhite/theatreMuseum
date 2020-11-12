@@ -175,7 +175,7 @@
 </template>
 
 <script>
-import ListMenu from "@/pages/ListMenu";
+import ListMenu from "@/components/ListMenu";
 export default {
   name: "persons",
   components: {ListMenu},

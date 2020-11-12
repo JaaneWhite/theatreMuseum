@@ -1,10 +1,10 @@
 <template>
   <header>
     <b-row class="header-carousel-row">
-      <b-col cols="6" class="header-left">
+      <b-col cols="12" xl="6" class="header-left">
 
       </b-col>
-      <b-col cols="6" class="header-right">
+      <b-col cols="12" xl="6" class="header-right">
       <b-carousel class="header-carousel"
           id="carousel-1"
           v-model="slide"
@@ -28,16 +28,16 @@
     <div class="header-title-block">
       <b-container >
         <b-row>
-          <b-col cols="7">
+          <b-col cols="12" xl="7">
             <b-row class="project-text">Проект осуществлён на средства гранта Президента Российской Федерации. Программа для поддержки творческих проектов
             общенационального значения в области культуры и искусства области культуры.</b-row>
             <b-row class="title-text">ТЕАТРАЛЬНЫЕ МУЗЕИ И АРХИВЫ РОССИИ И РУССКОГО ЗАРУБЕЖЬЯ</b-row>
 
         </b-col>
-          <b-col cols="5">
+          <b-col cols="12" xl="5">
             <b-row>
-              <b-col cols="4"></b-col>
-              <b-col cols="8"  class="search-block">
+              <b-col cols="0" xl="4"></b-col>
+              <b-col cols="12" xl="8" class="search-block">
                 <b-form class="search-form">
                   <b-form-input id="search-input" placeholder="Поиск" type="search"></b-form-input>
                   <b-button class="search-button keyboard-button"></b-button>
@@ -47,9 +47,9 @@
               </b-col>
             </b-row>
             <b-row class="link-row">
-              <b-col cols="4"></b-col>
-              <b-col cols="6"><b-link to="#" class="search-link">Расширенный поиск</b-link></b-col>
-              <b-col cols="2" class="right-link"><b-link to="#" class="search-link">А-Я</b-link></b-col>
+              <b-col cols="0" xl="4"></b-col>
+              <b-col cols="6" xl="6"><b-link to="#" class="search-link">Расширенный поиск</b-link></b-col>
+              <b-col cols="6" xl="2" class="right-link"><b-link to="#" class="search-link">А-Я</b-link></b-col>
             </b-row>
 
 
@@ -110,6 +110,7 @@ export default {
   line-height: 1.714;
   text-align: left;
 }
+
 
 
 
@@ -186,7 +187,37 @@ export default {
 .right-link {
   text-align: right;
 }
+@media (max-width: 1025px) {
+  .header-right {
+    display: none;
+  }
+  .header-carousel-row {
+    height: 48vw;
+  }
+  .project-text {
+    text-align: center;
+    margin-top: 4vw;
+  }
+  .title-text {
+    text-align: center;
+    margin-top: 10vw;
+  }
+  .search-form {
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 5vw;
+    height: 4vw;
+  }
+  .link-row {
+    margin-right: 15%;
+    margin-left: 15%;
 
+  }
+  .keyboard-button, .divider-img {
+    display: none;
+  }
+
+}
 
 
 </style>
