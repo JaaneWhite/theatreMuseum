@@ -14,26 +14,26 @@
 
   <b-row class="menu-sm">
     <b-col class="menu-sm-col">
-    <b-button to="/" class="menu-button">О&nbsp;ПРОЕКТЕ</b-button>
+    <b-button to="/" class="menu-button">О&nbsp;проекте</b-button>
     </b-col>
     <b-col class="menu-sm-col">
-    <b-button to="/" class="menu-button">ПАРТНЕРЫ</b-button>
-    </b-col>
-  </b-row>
-  <b-row class="menu-sm">
-    <b-col class="menu-sm-col">
-    <b-button to="/" class="menu-button">АВТОРЫ</b-button>
-    </b-col>
-    <b-col class="menu-sm-col">
-      <b-button to="/" class="menu-button">МУЗЕЙНОЕ <br> ЗАКОНОДАТЕЛЬСТВО</b-button>
+    <b-button to="/" class="menu-button">Партнеры</b-button>
     </b-col>
   </b-row>
   <b-row class="menu-sm">
     <b-col class="menu-sm-col">
-    <b-button to="/" class="menu-button">УЧАСТНИКИ</b-button>
+    <b-button to="/" class="menu-button">Авторы</b-button>
+    </b-col>
+    <b-col class="menu-sm-col">
+      <b-button to="/" class="menu-button">Музейное <br> законодательство</b-button>
+    </b-col>
+  </b-row>
+  <b-row class="menu-sm">
+    <b-col class="menu-sm-col">
+    <b-button to="/" class="menu-button">Участники</b-button>
     </b-col>
       <b-col class="menu-sm-col">
-    <b-button to="/" class="menu-button">КОНТАКТЫ</b-button>
+    <b-button to="/" class="menu-button">Контакты</b-button>
       </b-col>
   </b-row>
 
