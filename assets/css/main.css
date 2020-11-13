@@ -5,6 +5,11 @@
         max-width: 1460px;
     }
 }
+@media (min-width: 768px) {
+    .container  {
+        max-width: 768px;
+    }
+}
 body {
     margin: auto;
     font-family: 'Roboto', sans-serif;

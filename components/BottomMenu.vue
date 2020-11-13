@@ -1,6 +1,6 @@
 <template>
 
-    <b-nav class="site-menu" fill>
+    <b-nav class="site-menu" justified>
 
           <b-nav-item to="/" class="menu-button">О&nbsp;ПРОЕКТЕ</b-nav-item>
           <b-nav-item to="/" class="menu-button">АВТОРЫ</b-nav-item>
