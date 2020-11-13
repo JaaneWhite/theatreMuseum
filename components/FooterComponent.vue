@@ -1,7 +1,7 @@
 <template>
   <footer>
     <b-row class="menu-row">
-      <b-container class="menu-row-container">
+      <b-container class="menu-row-container bottom-menu">
         <BottomMenu/>
       </b-container>
     </b-row>
@@ -72,6 +72,11 @@ export default {
     display: block;
     text-align: center;
 
+  }
+}
+@media (max-width: 577px) {
+  .bottom-menu {
+    background-color: white;
   }
 }
 </style>

@@ -5,11 +5,7 @@
         max-width: 1460px;
     }
 }
-@media (min-width: 768px) {
-    .container  {
-        max-width: 768px;
-    }
-}
+
 body {
     margin: auto;
     font-family: 'Roboto', sans-serif;
@@ -52,6 +48,12 @@ a:hover {
 .menu-button {
     padding-bottom: 10px;
     padding-top: 10px;
+    height: 100%;
+    background-color: #dfd0b3;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .menu-button:hover {
@@ -59,11 +61,11 @@ a:hover {
 
 }
 .container, .row {
-    padding: 0;
     margin: auto;
 }
 .main-content {
     margin-bottom: 30px;
+    padding: 0;
 }
 .breadcrumb {
     background-color: transparent;
