@@ -49,6 +49,7 @@ export default {
 }
 .footer-img img {
   margin: auto;
+  max-width: 100%;
 }
 .footer-links-1 {
   margin-top: 30px;

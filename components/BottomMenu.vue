@@ -63,6 +63,7 @@ export default {
   align-items: center;
   display: grid;
   border: solid white 1px;
+  text-transform: none;
 }
 
 @media (max-width: 577px) {
