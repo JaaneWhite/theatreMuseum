@@ -3,11 +3,11 @@
   <b-row class="header-row">
     <b-container>
       <b-row>
-        <b-col cols="12" xl="7">
+        <b-col cols="12" xl="7" style="padding: 0">
           <b-row class="title-text">ТЕАТРАЛЬНЫЕ МУЗЕИ И АРХИВЫ РОССИИ <br>И РУССКОГО ЗАРУБЕЖЬЯ</b-row>
         </b-col>
-        <b-col cols="12" xl="1"></b-col>
-        <b-col cols="12" xl="4" class="search-block">
+        <b-col cols="12" xl="1" style="padding: 0"></b-col>
+        <b-col cols="12" xl="4" class="search-block" style="padding: 0">
           <b-row class="search-row">
           <b-form class="search-form">
             <b-form-input id="search-input" placeholder="Поиск" type="search"></b-form-input>
@@ -20,12 +20,17 @@
             <b-col cols="9" class="left-link"><b-link to="#" class="search-link">Расширенный поиск</b-link></b-col>
             <b-col cols="3" class="right-link"><b-link to="#" class="search-link">А - Я</b-link></b-col>
           </b-row>
-        </b-col>
+        </b-col >
       </b-row>
     </b-container>
 
     </b-row>
-  <b-row class="menu-row">
+    <div  class="menu-block">
+      <top-menu />
+    </div>
+
+
+    <b-row class="menu-row">
     <b-container class="menu-row">
       <TopMenu/>
     </b-container>
@@ -149,6 +154,40 @@ export default {
   .keyboard-button, .divider-img {
     display: none;
   }
+}
+@media (max-width: 569px) {
+
+
+  .menu-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding: 0;
+    z-index: 50;
+  }
+
+  .menu-row {
+    display: none;
+  }
+  .title-text {
+    font-size: 22px;
+    text-align: left;
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+  .search-form {
+    margin-left: 0;
+    margin-right: 0;
+    height: 44px;
+  }
+  .link-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
 }
 
 </style>

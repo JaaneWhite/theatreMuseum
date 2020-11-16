@@ -9,7 +9,7 @@
       <b-navbar-nav fill>
         <b-nav-item to="/" class="menu-button">
           <b-img src="~assets/img/home.png" class="home-logo" alt="Home"></b-img>
-          Главная
+          <div class="menu-button-text">Главная</div>
         </b-nav-item>
         <b-nav-item to="/" class="menu-button">Театральные музеи и архивы</b-nav-item>
         <b-nav-item to="/" class="menu-button">Театры</b-nav-item>
@@ -46,6 +46,9 @@ export default {
 .menu-text {
   display: none;
 }
+.menu-button-text {
+  display: none;
+}
 @media (max-width: 569px) {
   .menu-text {
     display: inline-block;
@@ -71,7 +74,12 @@ export default {
     text-transform: none;
     border-bottom: solid #cdc1a2 1px;
   }
-  .home-logo {display: none}
+  .home-logo {
+    display: none
+  }
+  .menu-button-text {
+    display: block;
+  }
 }
 
 

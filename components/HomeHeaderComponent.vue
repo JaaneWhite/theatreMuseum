@@ -203,7 +203,7 @@ export default {
 .menu-block {
   display: none;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
   .header-right {
     display: none;
   }
