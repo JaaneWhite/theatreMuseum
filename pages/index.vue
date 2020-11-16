@@ -1,170 +1,186 @@
 <template>
   <b-container class="main-content">
     <b-row>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
             <b-card-img src="~assets/img/site_sections/1.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Театральные музеи и архивы России</b-card-text>
+          <b-link to="" class="card-title link">Театральные музеи и архивы России</b-link>
+          <b-card-text class="card-title text">Театральные музеи и архивы России</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/2.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Театральные музеи и архивы русского зарубежья</b-card-text>
+          <b-link to="" class="card-title link">Театральные музеи и архивы русского зарубежья</b-link>
+          <b-card-text class="card-title text">Театральные музеи и архивы русского зарубежья</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/3.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Театры России</b-card-text>
+          <b-link to="" class="card-title link">Театры России</b-link>
+          <b-card-text class="card-title text">Театры России</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/4.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Театры русского зарубежья</b-card-text>
+          <b-link to="" class="card-title link">Театры России</b-link>
+          <b-card-text class="card-title text">Театры России</b-card-text>
         </b-card>
       </b-col>
     </b-row>
     <b-row>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img class="card-img section-5"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Карта театральных музеев</b-card-text>
+          <b-link to="" class="card-title link">Карта театральных музеев</b-link>
+          <b-card-text class="card-title text">Карта театральных музеев</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="collections" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/6.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Экспонаты портала</b-card-text>
+          <b-link to="collections" class="card-title link">Экспонаты портала</b-link>
+          <b-card-text class="card-title text">Экспонаты портала</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/7.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Коллекция театрального музея имени А.А. Бахрушина</b-card-text>
+          <b-link to="" class="card-title link">Коллекция театрального музея имени А.А. Бахрушина</b-link>
+          <b-card-text class="card-title text">Коллекция театрального музея имени А.А. Бахрушина</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/8.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Художники театра в фондах РГАЛИ</b-card-text>
+          <b-link to="" class="card-title link">Художники театра в фондах РГАЛИ</b-link>
+          <b-card-text class="card-title text">Художники театра в фондах РГАЛИ</b-card-text>
         </b-card>
       </b-col>
     </b-row>
     <b-row>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/9.png" class="card-img section-5"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Театральная библиотека</b-card-text>
+          <b-link to="" class="card-title link">Театральная библиотека</b-link>
+          <b-card-text class="card-title text">Театральная библиотека</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/10.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Виртуальные выставки театрального музея имени А.А. Бахрушина</b-card-text>
+          <b-link to="" class="card-title link">Виртуальные выставки театрального музея имени А.А. Бахрушина</b-link>
+          <b-card-text class="card-title text">Виртуальные выставки театрального музея имени А.А. Бахрушина</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/11.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Виртуальные выставки архивов</b-card-text>
+          <b-link to="" class="card-title link">Виртуальные выставки архивов</b-link>
+          <b-card-text class="card-title text">Виртуальные выставки архивов</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/12.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Зрительный зал</b-card-text>
+          <b-link to="" class="card-title link">Зрительный зал</b-link>
+          <b-card-text class="card-title text">Зрительный зал</b-card-text>
         </b-card>
       </b-col>
     </b-row>
     <b-row>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/13.png" class="card-img section-5"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Драматургия XXI века</b-card-text>
+          <b-link to="" class="card-title link">Драматургия XXI века</b-link>
+          <b-card-text class="card-title text">Драматургия XXI века</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/14.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Театральный туризм</b-card-text>
+          <b-link to="" class="card-title link">Театральный туризм</b-link>
+          <b-card-text class="card-title text">Театральный туризм</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img src="~assets/img/site_sections/15.png" class="card-img"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title">Акция "Сохраним историю российского театра для потомков"</b-card-text>
+          <b-link to="" class="card-title link">Акция "Сохраним историю российского театра для потомков"</b-link>
+          <b-card-text class="card-title text">Акция "Сохраним историю российского театра для потомков"</b-card-text>
         </b-card>
       </b-col>
-      <b-col>
+      <b-col cols="12" md="6" xl="3">
         <b-card class="section-card">
           <b-link to="" class="card-link">
             <div class="card-link-bg">
               <b-card-img class="card-img section-16"></b-card-img>
             </div>
           </b-link>
-          <b-card-text class="card-title"> Правила использования материалов портала</b-card-text>
+          <b-link to="" class="card-title link">Правила использования материалов портала</b-link>
+          <b-card-text class="card-title text">Правила использования материалов портала</b-card-text>
         </b-card>
       </b-col>
     </b-row>
@@ -240,4 +256,50 @@ export default {
   margin-left: 35px;
   margin-bottom: 0;
 }
+.card-title.link {
+  display: none;
+}
+@media (max-width: 569px) {
+  .card-title.text {
+    display: none;
+  }
+  .card-title.link {
+    display: flex;
+  }
+  .card-link-bg {
+    width: 80px;
+    height: 60px;
+    margin: 5px auto;
+  }
+  .card-img {
+    width: 80px;
+    height: 60px;
+  }
+  .card-link-bg:hover {
+    background: none;
+  }
+  .card-img:hover{
+    width: 80px;
+    height: 60px;
+    opacity: 100%;
+
+  }
+  .card-title {
+    position: relative;
+    background-color: transparent;
+    color: #270000;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+  .main-content {
+    padding-top: 15px;
+  }
+}
+
+
+
 </style>
+
