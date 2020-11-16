@@ -28,13 +28,20 @@
     <div class="header-title-block">
       <b-container >
         <b-row>
-          <b-col cols="12" xl="7">
-            <b-row class="project-text">Проект осуществлён на средства гранта Президента Российской Федерации. Программа для поддержки творческих проектов
+          <b-col cols="12" xl="7" style="padding: 0">
+            <b-row class="project-text ver-lg">Проект осуществлён на средства гранта Президента Российской Федерации. Программа для поддержки творческих проектов
             общенационального значения в области культуры и искусства области культуры.</b-row>
+            <b-row class="ver-sm">
+              <b-col cols="10" class="project-text">
+              </b-col>
+              <b-col cols="2">
+              </b-col>
+            </b-row>
+            <b-col></b-col>
             <b-row class="title-text">ТЕАТРАЛЬНЫЕ МУЗЕИ И АРХИВЫ РОССИИ И РУССКОГО ЗАРУБЕЖЬЯ</b-row>
 
         </b-col>
-          <b-col cols="12" xl="5">
+          <b-col cols="12" xl="5" style="padding: 0">
             <b-row>
               <b-col cols="0" xl="4"></b-col>
               <b-col cols="12" xl="8" class="search-block">
@@ -47,9 +54,9 @@
               </b-col>
             </b-row>
             <b-row class="link-row">
-              <b-col cols="0" xl="4"></b-col>
-              <b-col cols="6" xl="6"><b-link to="#" class="search-link">Расширенный поиск</b-link></b-col>
-              <b-col cols="6" xl="2" class="right-link"><b-link to="#" class="search-link">А-Я</b-link></b-col>
+              <b-col cols="0" xl="4" style="padding: 0"></b-col>
+              <b-col cols="6" xl="6" style="padding: 0"><b-link to="#" class="search-link">Расширенный поиск</b-link></b-col>
+              <b-col cols="6" xl="2" class="right-link" style="padding: 0"><b-link to="#" class="search-link">А-Я</b-link></b-col>
             </b-row>
 
 
@@ -57,6 +64,10 @@
         </b-row>
       </b-container>
     </div>
+    <div  class="menu-block">
+      <top-menu />
+    </div>
+
 
   <b-row class="menu-row">
     <b-container class="menu-row">
@@ -125,6 +136,7 @@ export default {
 .search-block {
   display: flex;
   text-align: right;
+  padding: 0;
 }
 .search-form {
   text-align: right;
@@ -175,6 +187,7 @@ export default {
 }
 .link-row {
   margin-top: 10px;
+  padding: 0;
 }
 .search-link{
   color: white !important;
@@ -186,6 +199,9 @@ export default {
 }
 .right-link {
   text-align: right;
+}
+.menu-block {
+  display: none;
 }
 @media (max-width: 1025px) {
   .header-right {
@@ -218,6 +234,62 @@ export default {
   }
 
 }
+.ver-sm {
+  display: none;
+}
 
+
+@media (max-width: 569px) {
+  .header-carousel-row {
+    height: 428px;
+  }
+  .ver-lg {
+    display: none;
+  }
+  .ver-sm {
+    display: flex;
+    padding: 0;
+  }
+  .project-text {
+    text-align: left;
+    padding: 0;
+  }
+  .menu-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding: 0;
+    z-index: 50;
+  }
+
+  .menu-row {
+  display: none;
+}
+  .title-text {
+    font-size: 22px;
+    text-align: left;
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+  .search-form {
+    margin-left: 0;
+    margin-right: 0;
+    height: 44px;
+  }
+  .link-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+@media (max-width: 470px) {
+  .project-text {
+    font-size: 10px;
+  }
+
+}
 
 </style>

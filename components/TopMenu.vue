@@ -1,25 +1,78 @@
 <template>
-  <b-navbar toggleable="sm" class="site-menu">
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+  <b-navbar toggleable="sm" class="site-menu" :class="togExp">
+    <b-navbar-brand class="menu-text" :class="togExp">Портал создан на средства гранта Президента
+      Российской Федерации для поддержки
+      творческих проектов общенационального
+      значения в области культуры и искусства</b-navbar-brand>
+    <b-navbar-toggle target="nav-collapse" v-on:click="switchCollapse()"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav fill>
         <b-nav-item to="/" class="menu-button">
           <b-img src="~assets/img/home.png" class="home-logo" alt="Home"></b-img>
+          Главная
         </b-nav-item>
-        <b-nav-item to="/" class="menu-button">ТЕАТРАЛЬНЫЕ МУЗЕИ И АРХИВЫ</b-nav-item>
-        <b-nav-item to="/" class="menu-button">ТЕАТРЫ</b-nav-item>
-        <b-nav-item to="persons" class="menu-button">ИМЕННОЙ УКАЗАТЕЛЬ</b-nav-item>
-        <b-nav-item to="/" class="menu-button">ГЕОГРАФИЧЕСКИЙ УКАЗАТЕЛЬ</b-nav-item>
+        <b-nav-item to="/" class="menu-button">Театральные музеи и архивы</b-nav-item>
+        <b-nav-item to="/" class="menu-button">Театры</b-nav-item>
+        <b-nav-item to="persons" class="menu-button">Именной указатель</b-nav-item>
+        <b-nav-item to="/" class="menu-button">Географический указатель</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>
 <script>
 export default {
-  name: 'TopMenu'
+  name: 'TopMenu',
+  data() {
+    return {
+      menuExpanded: false,
+      togExp: 'collapsed'
+    }
+  },
+  methods: {
+    switchCollapse: function () {
+      if (this.menuExpanded == false) {
+        this.togExp = 'not-collapsed';
+        this.menuExpanded = true;
+      }
+      else {
+        this.togExp = 'collapsed';
+        this.menuExpanded = false;
+      }
+    }
+  }
 }
 </script>
 <style scoped>
+.menu-text {
+  display: none;
+}
+@media (max-width: 569px) {
+  .menu-text {
+    display: inline-block;
+    font-size: 10px;
+    white-space: normal;
+    text-align: left;
+    width: 75%;
+    padding-left: 15px;
+  }
+  .site-menu {
+    padding-top: 15px;
+  }
+  .site-menu.collapsed {
+    background: transparent;
+  }
+  .menu-text.collapsed {
+    color: white;
+  }
+  .menu-button {
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    text-transform: none;
+    border-bottom: solid #cdc1a2 1px;
+  }
+  .home-logo {display: none}
+}
 
 
 
