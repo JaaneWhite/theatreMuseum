@@ -1,12 +1,17 @@
 <template>
   <b-container class="main-content">
     <b-row class="breadcrumb-row">
-      <b-breadcrumb :items="items"></b-breadcrumb>
+      <breadCrumbs :bread-crumb-items="breadCrumbItems"/>
     </b-row>
-    <b-row class="page-title">Персоны</b-row>
+    <pageTitle :page-title-text="pageTitleText"></pageTitle>
     <b-row>
       <b-col cols="3" class="menu-col">
-        <listMenu/>
+        <Pagination
+            :total-rows="personNameListRows"
+            :pagination-area-controls="personListPaginationAreaControls"
+            :per-page="personNameListPerPage"/>
+        <MenuList :menu-list-items="personlist" id="person-name-list"/>
+
       </b-col>
       <b-col cols="9">
         <b-row class="person-title">Брехт Бертольт</b-row>
@@ -175,13 +180,19 @@
 </template>
 
 <script>
-import ListMenu from "@/components/ListMenu";
+import BreadCrumbs from "@/components/BreadCrumbs";
+import PageTitle from "~/components/PageTitle";
+import Pagination from "@/components/Pagination";
+import MenuList from "@/components/MenuList";
 export default {
   name: "persons",
-  components: {ListMenu},
+  components: {MenuList, Pagination, BreadCrumbs, ListMenu, PageTitle},
   data() {
     return {
-      items: [
+      pageTitleText: 'Персоны',
+      personListPaginationAreaControls: 'person-name-list',
+      personNameListPerPage: '20',
+      breadCrumbItems: [
         {
           text: 'Главная',
           to: '/'
@@ -190,9 +201,39 @@ export default {
           text: 'Именной указатель',
           active: true
         }
+      ],
+      personlist: [
+        {text: 'Абади Мартин', link: 'persons'},
+        {text: 'Абадиев Бек', link: 'persons'},
+        {text: 'Абакаров Ахмедхан', link: 'persons'},
+        {text: 'Абасов Магомед Абасович (Абасил)', link: 'persons'},
+        {text: 'Абашеев Петр Тимофеевич', link: 'persons'},
+        {text: 'Абашова Мария Юрьевна', link: 'persons'},
+        {text: 'Аббасов Азат Зиннатович', link: 'persons'},
+        {text: 'Абдиев Султан Назирович', link: 'persons'},
+        {text: 'Абдоков Маталио Умарович', link: 'persons'},
+        {text: 'Абдулгапуров Хайбула Абдулович', link: 'persons'},
+        {text: 'Абдуллаев Кемал Джан-Бахиш оглы', link: 'persons'},
+        {text: 'Абдуллаев Шахмардан Гасан-Гусейнович', link: 'persons'},
+        {text: 'Абдуллин Азат Хамматович', link: 'persons'},
+        {text: 'Абдулмуслимова Сапият', link: 'persons'},
+        {text: 'Абдулов Александр', link: 'persons'},
+        {text: 'Абдулов Гавриил Данилович', link: 'persons'},
+        {text: 'Абдулхак Хамид Тархан', link: 'persons'},
+        {text: 'Абдулхаликов Махмуд Абдулхаликович', link: 'persons'},
+        {text: 'Абдураззаков Барзу', link: 'persons'},
+        {text: 'Абелева-Таганова Нателла Матвеевна', link: 'persons'},
+        {text: 'Абэ, Кобо', link: 'persons'},
+        {text: 'Авалиани Ной Иванович', link: 'persons'},
+        {text: 'Аверин Андрей Викторович', link: 'persons'},
       ]
     }
+  },
+  computed: {
+    personNameListRows() {
+      return this.personlist.length
   }
+}
 }
 </script>
 

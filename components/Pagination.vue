@@ -1,6 +1,9 @@
 <template>
     <b-pagination
         v-model="currentPage"
+        :total-rows="totalRows"
+        :per-page="perPage"
+        :aria-controls="paginationAreaControls"
         pills
         first-number
         last-number
@@ -18,6 +21,11 @@ export default {
     return {
       currentPage: 1
     }
+  },
+  props: {
+    totalRows: {},
+    paginationAreaControls: {},
+    perPage: {}
   }
 }
 </script>

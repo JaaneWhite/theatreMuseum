@@ -93,35 +93,19 @@ a:hover {
     margin-bottom: 30px;
     padding: 0;
 }
-.breadcrumb {
-    background-color: transparent;
-    color: #cac3b1;
-    padding-left: 0;
-}
-.breadcrumb-item a, .breadcrumb-item.active {
-    color: #cac3b1 !important;
-}
-.breadcrumb-item a {
-    text-decoration: underline;
-}
-.page-title {
-    font-size: 2vw;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    font-weight: bold;
-    line-height: 1.389;
-}
+
+
 
 .pagination {
     margin: 30px auto;
 }
-.page-item.disabled .page-link, .page-link, .page-item:hover .page-link {
+.page-item.disabled .page-link, .page-item .page-link, .page-item:hover .page-link {
     color: #270000;
     background-color: transparent;
-    border-color: transparent;
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.2 !important;
     box-shadow: none;
+    border: none;
 }
 .page-item.active .page-link {
     color: #270000;

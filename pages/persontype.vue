@@ -1,9 +1,9 @@
 <template>
   <b-container class="main-content">
     <b-row class="breadcrumb-row">
-      <b-breadcrumb :items="items"></b-breadcrumb>
+      <breadCrumbs :bread-crumb-items="breadCrumbItems"/>
     </b-row>
-    <b-row class="page-title">Байрон Джордж Гордон</b-row>
+    <pageTitle :page-title="pageTitle"/>
     <b-row class="person-date">
       <p>(англ. George Gordon Byron (Noel))</p>
       <p>(22 января 1788 года, Лондон — 19 апреля 1824 года, Миссолунги, Османская Греция)</p>
@@ -73,11 +73,14 @@
 </template>
 
 <script>
+import PageTitle from "@/components/PageTitle";
 export default {
   name: "persontype",
+  components: {PageTitle},
   data() {
     return {
-      items: [
+      pageTitle: 'Байрон Джордж Гордон',
+      breadCrumbItems: [
         {
           text: 'Главная',
           to: '/'

@@ -25,16 +25,17 @@
     </b-container>
 
     </b-row>
+
     <div  class="menu-block">
       <top-menu />
     </div>
 
 
     <b-row class="menu-row">
-    <b-container class="menu-row">
-      <TopMenu/>
-    </b-container>
-  </b-row>
+      <b-container class="menu-row">
+        <TopMenu/>
+      </b-container>
+    </b-row>
   </header>
 </template>
 
@@ -130,6 +131,9 @@ export default {
 .right-link {
   text-align: right;
   padding: 0;
+}
+.menu-block {
+  display: none;
 }
 @media (max-width: 1025px) {
 

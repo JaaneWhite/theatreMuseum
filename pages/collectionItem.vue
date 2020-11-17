@@ -1,7 +1,7 @@
 <template>
   <b-container class="main-content">
     <b-row class="breadcrumb-row">
-      <b-breadcrumb :items="items"></b-breadcrumb>
+      <breadCrumbs :bread-crumb-items="breadCrumbItems"/>
     </b-row>
     <b-row class="page-title">Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса
       Турандот". 27 февраля 1922 г.</b-row>
@@ -62,7 +62,7 @@ export default {
   layout: "default",
   data() {
     return {
-      items: [
+      breadCrumbItems: [
         {
           text: 'Главная',
           to: '/'

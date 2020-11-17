@@ -1,27 +1,14 @@
 <template>
   <b-container class="main-content">
     <b-row class="breadcrumb-row">
-      <b-breadcrumb :items="items"></b-breadcrumb>
+      <breadCrumbs :bread-crumb-items="breadCrumbItems"/>
     </b-row>
-    <b-row class="page-title">Экспонаты</b-row>
+    <pageTitle :page-title-text="pageTitleText"></pageTitle>
+
+
     <b-row>
       <b-col cols="3" class="menu-col">
-        <b-nav vertical class="collection-menu">
-          <b-nav-item to="#afi" exact exact-active-class="active" class="c-menu-button">Афиши</b-nav-item>
-          <b-nav-item class="c-menu-button">Декорации</b-nav-item>
-          <b-nav-item class="c-menu-button">Документы, рукописи</b-nav-item>
-          <b-nav-item class="c-menu-button">Здания театров и музеев</b-nav-item>
-          <b-nav-item class="c-menu-button">Книги</b-nav-item>
-          <b-nav-item class="c-menu-button">Костюмы, грим</b-nav-item>
-          <b-nav-item class="c-menu-button">Куклы</b-nav-item>
-          <b-nav-item class="c-menu-button">Награды</b-nav-item>
-          <b-nav-item class="c-menu-button">Портреты</b-nav-item>
-          <b-nav-item class="c-menu-button">Программы</b-nav-item>
-          <b-nav-item class="c-menu-button">Реквизит, бутафория, предметы</b-nav-item>
-          <b-nav-item class="c-menu-button">Скульптура</b-nav-item>
-          <b-nav-item class="c-menu-button">Стенды</b-nav-item>
-          <b-nav-item class="c-menu-button">Сцены из спектаклей</b-nav-item>
-        </b-nav>
+        <MenuList :menu-list-items="collectionMenuList"/>
       </b-col>
       <b-col cols="9" class="collection-col">
         <b-row>
@@ -49,19 +36,22 @@
   </b-container>
 
 
-
-
 </template>
 
 <script>
 import Pagination from "~/components/Pagination";
+import BreadCrumbs from "~/components/BreadCrumbs";
+import PageTitle from "~/components/PageTitle";
+import MenuList from "@/components/MenuList";
+
 export default {
   name: "collections",
-  components: {Pagination},
+  components: {MenuList, Pagination, BreadCrumbs, PageTitle},
   layout: "default",
   data() {
     return {
-      items: [
+      pageTitleText: 'Экспонаты',
+      breadCrumbItems: [
         {
           text: 'Главная',
           to: '/'
@@ -70,6 +60,22 @@ export default {
           text: 'Коллекции',
           active: true
         }
+      ],
+      collectionMenuList: [
+        {text: "Афиши"},
+        {text: "Декорации"},
+        {text: "Документы, рукописи"},
+        {text: "Здания театров и музеев"},
+        {text: "Книги"},
+        {text: "Костюмы, грим"},
+        {text: "Куклы"},
+        {text: "Награды"},
+        {text: "Портреты"},
+        {text: "Программы"},
+        {text: "Реквизит, бутафория, предметы"},
+        {text: "Скульптура"},
+        {text: "Стенды"},
+        {text: "Сцены из спектаклей"}
       ],
       posters: [
         {image: '~assets/img/posters/1.png', text: 'Афиша с исполнителями. Третья студия МХАТ (Студия Вахтангова). "Принцесса Турандот". 27 февраля 1922 г.'},
@@ -89,17 +95,7 @@ export default {
   border-right: solid #270000 1px;
   padding: 0;
 }
-.c-menu-button {
-  margin: 0;
-  padding-bottom: 6px;
-}
 
-.c-menu-button a {
-  padding-left: 0;
-}
-.c-menu-button:hover a {
-  color: #d78d5e !important;
-}
 .collection-col {
   padding-left: 30px;
 }
