@@ -5,16 +5,26 @@
     </b-row>
     <pageTitle :page-title-text="pageTitleText"></pageTitle>
     <b-row>
-      <b-col cols="3" class="menu-col">
+      <b-col cols="12" md="3" class="menu-col">
         <Pagination
+            class="person-list-pagination"
             :total-rows="personNameListRows"
             :pagination-area-controls="personListPaginationAreaControls"
             :per-page="personNameListPerPage"/>
         <MenuList :menu-list-items="personlist" id="person-name-list"/>
 
+        <b-form-group class="alphabet-group">
+          <b-form-radio-group
+              id="btn-radios-1"
+              v-model="alphabetSelected"
+              :options="alphabetOptions"
+              buttons
+              name="radios-btn-default"
+          ></b-form-radio-group>
+        </b-form-group>
+
       </b-col>
-      <! -- Блок с информацией о выбранной персоне -->
-      <b-col cols="9">
+      <b-col cols="12" md="9">
         <b-row class="person-title">Брехт Бертольт</b-row>
         <b-row class="person-date">
           <p>(нем. Bertolt Brecht)</p>
@@ -187,7 +197,7 @@ import Pagination from "@/components/Pagination";
 import MenuList from "@/components/MenuList";
 export default {
   name: "persons",
-  components: {MenuList, Pagination, BreadCrumbs, ListMenu, PageTitle},
+  components: {MenuList, Pagination, BreadCrumbs, PageTitle},
   data() {
     return {
       pageTitleText: 'Персоны',
@@ -227,7 +237,40 @@ export default {
         {text: 'Абэ, Кобо', link: 'persons'},
         {text: 'Авалиани Ной Иванович', link: 'persons'},
         {text: 'Аверин Андрей Викторович', link: 'persons'},
-      ]
+      ],
+      alphabetSelected: 'А',
+      alphabetOptions: [
+        { text: 'А', value: 'А' },
+        { text: 'Б', value: 'Б' },
+        { text: 'В', value: 'В' },
+        { text: 'Г', value: 'Г' },
+        { text: 'Д', value: 'Д' },
+        { text: 'Е', value: 'Е' },
+        { text: 'Ё', value: 'Ё' },
+        { text: 'Ж', value: 'Ж' },
+        { text: 'З', value: 'З' },
+        { text: 'И', value: 'И' },
+        { text: 'Й', value: 'Й' },
+        { text: 'К', value: 'К' },
+        { text: 'Л', value: 'Л' },
+        { text: 'М', value: 'М' },
+        { text: 'Н', value: 'Н' },
+        { text: 'О', value: 'О' },
+        { text: 'П', value: 'П' },
+        { text: 'Р', value: 'Р' },
+        { text: 'С', value: 'С' },
+        { text: 'т', value: 'Т' },
+        { text: 'У', value: 'У' },
+        { text: 'Ф', value: 'Ф' },
+        { text: 'Х', value: 'Х' },
+        { text: 'Ц', value: 'Ц' },
+        { text: 'Ч', value: 'Ч' },
+        { text: 'Ш', value: 'Ш' },
+        { text: 'Щ', value: 'Щ' },
+        { text: 'Э', value: 'Э' },
+        { text: 'Ю', value: 'Ю' },
+        { text: 'Я', value: 'Я' }
+        ]
     }
   },
   computed: {
@@ -338,5 +381,32 @@ export default {
 .info-link:hover{
   color: #d78d5e !important;
 }
+.alphabet-group {
+  display: none;
+}
+/* Мобильная версия 0-767 px */
+@media (max-width: 767px) {
+  .person-list-pagination, #person-name-list {
+    display: none;
+  }
+
+  .person-title {
+    font-size: 20px;
+  }
+
+  .breadcrumb-row {
+    padding-left: 15px;
+  }
+
+  .menu-col {
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+  }
+  .alphabet-group {
+    display: flex
+  }
+}
+
 
 </style>

@@ -21,6 +21,7 @@ export default {
 @media (max-width: 767px) {
   .page-title {
     font-size: 24px;
+    padding-left: 15px;
   }
 }
 
