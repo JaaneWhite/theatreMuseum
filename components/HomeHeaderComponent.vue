@@ -237,9 +237,15 @@ export default {
 .ver-sm {
   display: none;
 }
+/* Планшетная версия 768 - 992 px*/
+@media (max-width: 991px) {
+  .header-carousel-row {
+    height: 474px;
+  }
+}
 
-
-@media (max-width: 569px) {
+/* Мобильная версия 0 - 767 px*/
+@media (max-width: 767px) {
   .header-carousel-row {
     height: 428px;
   }

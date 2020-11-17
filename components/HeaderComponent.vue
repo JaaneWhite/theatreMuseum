@@ -159,8 +159,11 @@ export default {
     display: none;
   }
 }
-@media (max-width: 569px) {
-
+/* Мобильная версия 0 - 767 px*/
+@media (max-width: 767px) {
+  .header-row {
+    height: 428px;
+  }
 
   .menu-block {
     position: absolute;

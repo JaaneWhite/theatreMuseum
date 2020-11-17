@@ -65,8 +65,8 @@ export default {
   border: solid white 1px;
   text-transform: none;
 }
-
-@media (max-width: 577px) {
+/* Мобильная версия 0 - 767 px*/
+@media (max-width: 767px) {
   .menu-lg {
     display: none;
   }

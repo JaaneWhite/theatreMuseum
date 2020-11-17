@@ -13,6 +13,7 @@
         <MenuList :menu-list-items="personlist" id="person-name-list"/>
 
       </b-col>
+      <! -- Блок с информацией о выбранной персоне -->
       <b-col cols="9">
         <b-row class="person-title">Брехт Бертольт</b-row>
         <b-row class="person-date">

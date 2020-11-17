@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="sm" class="site-menu" :class="togExp">
+  <b-navbar toggleable="md" class="site-menu" :class="togExp">
     <b-navbar-brand class="menu-text" :class="togExp">Портал создан на средства гранта Президента
       Российской Федерации для поддержки
       творческих проектов общенационального
@@ -49,14 +49,17 @@ export default {
 .menu-button-text {
   display: none;
 }
-@media (max-width: 569px) {
+/* Мобильная версия 0 - 767 px*/
+@media (max-width: 767px) {
   .menu-text {
-    display: inline-block;
+    display: flex;
     font-size: 10px;
     white-space: normal;
     text-align: left;
+    align-items: center;
     width: 75%;
     padding-left: 15px;
+    min-height: 85px;
   }
   .site-menu {
     padding-top: 15px;
@@ -64,9 +67,13 @@ export default {
   .site-menu.collapsed {
     background: transparent;
   }
+  .site-menu.not-collapsed {
+    height: 100%;
+  }
   .menu-text.collapsed {
     color: white;
   }
+
   .menu-button {
     width: 100%;
     text-align: left;
@@ -81,7 +88,9 @@ export default {
     display: block;
   }
 }
+/* Планшетная версия 768 - 992 px*/
+@media (max-width: 991px) {
 
-
+}
 
 </style>

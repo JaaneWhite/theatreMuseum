@@ -211,6 +211,7 @@ export default {
   display: flex;
   align-items: center;
   text-align: center;
+  border: none;
 }
 
 .card-img {
@@ -219,6 +220,7 @@ export default {
   height: 225px;
   background-color: white;
   opacity: 100%;
+  border: none;
 }
 .section-5, .section-16 {
   background-color: #dfd0b3;
@@ -259,7 +261,8 @@ export default {
 .card-title.link {
   display: none;
 }
-@media (max-width: 569px) {
+/* Мобильная версия 0-767 px */
+@media (max-width: 767px) {
   .card-title.text {
     display: none;
   }

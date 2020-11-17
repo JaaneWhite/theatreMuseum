@@ -84,7 +84,11 @@ export default {
 
   }
 }
-@media (max-width: 577px) {
+/* Мобильная версия 0 - 767 px*/
+@media (max-width: 767px) {
+  .menu-row {
+    background-color: white;
+  }
   .bottom-menu {
     background-color: white;
   }
