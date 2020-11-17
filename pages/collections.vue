@@ -7,10 +7,24 @@
 
 
     <b-row>
-      <b-col cols="3" class="menu-col">
-        <MenuList :menu-list-items="collectionMenuList"/>
+      <b-col cols="12" md="3" class="menu-col">
+        <MenuList :menu-list-items="collectionMenuList" class="collection-menu-list"/>
+        <b-dropdown
+            :text="collectionMenuTitle"
+            class="collection-Menu-dd"
+            split
+            toggle-class="list-button-dd"
+            split-class="list-button">
+          <b-dropdown-item-button
+              class="collection-menu-button"
+              v-for="menuItem in collectionMenuList"
+              v-on:click="collectionMenuTitle = menuItem.text">
+            {{menuItem.text}}
+          </b-dropdown-item-button>
+        </b-dropdown>
+
       </b-col>
-      <b-col cols="9" class="collection-col">
+      <b-col cols="12" md="9" class="collection-col">
         <b-row>
           <b-col cols="12" xl="6" class="collection-title">Афиши</b-col>
           <b-col cols="12" xl="6" class="collection-num">Показано экспонатов: 1-12 из 774</b-col>
@@ -21,11 +35,11 @@
         <b-row class="posters-row">
 
             <b-card class="poster-card" v-for="poster in posters">
-              <div class="poster-card-img-cont first-card">
+              <div class="poster-card-img-cont">
               <b-card-img :src="poster.image" top class="poster-card-image">
               </b-card-img>
               </div>
-              <b-card-text class="poster-card-text first-card"><b-link to="collectionItem">{{poster.text}}</b-link></b-card-text>
+              <b-card-text class="poster-card-text"><b-link to="collectionItem">{{poster.text}}</b-link></b-card-text>
             </b-card>
         </b-row>
 
@@ -51,6 +65,7 @@ export default {
   data() {
     return {
       pageTitleText: 'Экспонаты',
+      collectionMenuTitle: 'Афиши',
       breadCrumbItems: [
         {
           text: 'Главная',
@@ -91,6 +106,10 @@ export default {
 </script>
 
 <style scoped>
+.main-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .menu-col {
   border-right: solid #270000 1px;
   padding: 0;
@@ -101,10 +120,11 @@ export default {
 }
 
 .collection-title {
-  font-size: 1.4vw;
+  font-size: 26px;
   font-weight: bold;
   padding: 0;
 }
+
 
 .collection-num {
   text-align: right;
@@ -116,12 +136,11 @@ export default {
 
 .pagination-row {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
 
 }
-.pagination {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
+
 
 .posters-row {
   margin-bottom: 30px;
@@ -177,18 +196,49 @@ export default {
 .poster-card-text:hover a{
   color: #d78d5e !important;
 }
-.first-card {
-  margin-left: 0;
-}
-.last-card {
-  margin-right: 0;
-}
+
 @media (max-width: 1025px) {
   .collection-num {
     text-align: left;
     padding: 0;
   }
 }
+/* Мобильная версия 0-767 px */
+@media (max-width: 767px) {
+  .collection-menu-list {
+    display: none;
+  }
+  .collection-Menu-dd {
+    width: 100%;
+    border: solid #cf6a40 3px;
+  }
+  .menu-col {
+    border: none;
+  }
+  .collection-col {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  .collection-title {
+    font-size: 20px;
+  }
+  .posters-row {
+    margin-left: 0px;
+
+  }
+  .poster-card-img-cont {
+    min-height: 130px;
+    min-width: 130px;
+  }
+  .poster-card-text {
+    width: 16vw;
+    min-width: 130px;
+    max-height: 130px;
+
+  }
+
+}
+
 
 
 </style>

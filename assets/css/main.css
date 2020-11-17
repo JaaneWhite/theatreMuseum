@@ -147,3 +147,43 @@ a:hover {
 .nav-tabs .nav-link.active {
     background-color: #d3c2a2 !important;
 }
+.list-button, .list-button:hover, .list-button:active, .list-button:focus {
+    background-color: white;
+    width: 90%;
+    color: #270000;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.list-button-dd, .list-button-dd:hover, .list-button-dd:active, .list-button-dd:focus {
+    background-color: white;
+    background-image: url("~assets/img/list-arrows.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10%;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+.show > .btn-secondary.dropdown-toggle {
+    background-color: white;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+.collection-menu-button {
+    width: 100%;
+    color: #270000;
+    font-size: 15px;
+    border-bottom: solid #e5eff1 1px;
+}
+.dropdown-menu {
+    width: 100%;
+    border-radius: 0;
+    border: solid #cf6a40 3px;
+    max-height: 560px;
+    overflow: scroll;
+}
